@@ -1,73 +1,102 @@
 
-platforms = {
-    "ios": {
-        "audio_only": {
-            "Premium": "AgoraPremiumAudio_for_iOS.*ipa</A>",
-            "Wayang":"WayangAudio_for_iOS.*ipa</A>"
+VERSION = ["2.7.1.2", "2.7.2"]
+
+PLATFORMS = {
+    "2.7.1.2": {
+        "ios": {
+            "audio_only": {
+                "Premium": ".*premium.*ipa",
+                "Wayang": ".*Wayang.*ipa"
             },
-        "default": {
-            "Premium": "AgoraPremium_for_iOS.*ipa</A>",
-            "Wayang":"Wayang_for_iOS.*ipa</A>"
+            "default": {
+                "Premium": ".*premium.*ipa",
+                "Wayang": ".*Wayang.*ipa"
             },
-        "ffmpeg_player": {
-            "Premium": "AgoraPremiumFFmpeg_for_iOS.*ipa</A>",
-            "Wayang":"WayangFFmpeg_for_iOS.*ipa</A>"
+            "ffmpeg_player": {
+                "Premium": ".*premium.*ipa",
+                "Wayang": ".*Wayang.*ipa"
             }
         },
-    "android": {
-        "audio_only": {
-            "Premium": "Agora_premiumAudio_for_Android.*apk</A>",
-            "Wayang":"Agora_WayangAudio_for_Android.*apk</A>"
+        "android": {
+            "audio_only": {
+                "Premium": ".*premium.*apk",
+                "Wayang": ".*Wayang.*apk"
             },
-        "default": {
-            "Premium": "Agora_premium_for_Android.*apk</A>",
-            "Wayang":">Agora_Wayang_for_Android.*apk</A>"
+            "default": {
+                "Premium": ".*premium.*apk",
+                "Wayang": ".*Wayang.*apk"
             },
-        "ffmpeg_player": {
-            "Premium": "Agora_premium_for_Android.*apk</A>",
-            "Wayang":"Agora_Wayang_for_Android.*apk</A>"
+            "ffmpeg_player": {
+                "Premium": ".*premium.*apk",
+                "Wayang": ".*Wayang.*apk"
             }
         },
-    "mac": {
-        "default": {
-            "Premium": "AgoraPremiumMac.*zip</A>",
-            "Wayang": "WayangMac.*zip</A>",
-            "Agoplay": "Agoplay_for_Mac.*zip</A>"
+        "mac": {
+            "default": {
+                "Premium": ".*Premium.*zip",
+                "Wayang": ".*Wayang.*zip",
+                "Agoplay": ".*Agoplay.*zip"
             },
-        "ffmpeg_player": {
-            "Premium": "AgoraPremiumMacFFmpeg.*zip</A>",
-            "Wayang":"WayangMacFFmpeg.*zip</A>"
+            "ffmpeg_player": {
+                "Premium": ".*Premium.*zip",
+                "Wayang": ".*Wayang.*zip"
             }
         },
-    "windows": {
-        "audio_only": {
-            "Wayang_x64": "Agora_Wayang_for_Windows_x64.*zip</A>",
-            "Wayang_x86":"Agora_Wayang_for_Windows_x86.*zip</A>"
+        "windows": {
+            "audio_only": {
+                "Wayang_x64": ".*Wayang.*x64.*zip",
+                "Wayang_x86": ".*Wayang.*x86.*zip"
             },
-        "default": {
-            "Wayang_x64": "Agora_Wayang_for_Windows_x64.*zip</A>",
-            "Wayang_x86":"Agora_Wayang_for_Windows_x86.*zip</A>",
-            "Agoplay_x64": "Agora_Agoplay_for_Windows_x64.*zip</A>",
-            "Agoplay_x86": "Agora_Agoplay_for_Windows_x86.*zip</A>",
-            "Openlive_x86": "Agora_Openlive_for_Windows_x86.*zip</A>",
-            "Openlive_x64": "Agora_Openlive_for_Windows_x64.*zip</A>",
+            "default": {
+                "Wayang_x64": ".*Wayang.*x64.*zip",
+                "Wayang_x86": ".*Wayang.*x86.*zip",
+                "Agoplay_x64": ".*Agoplay.*x64.*zip",
+                "Agoplay_x86": ".*Agoplay.*x86.*zip",
+                "Openlive_x86": ".*Openlive.*x86.*zip",
+                "Openlive_x64": ".*Openlive.*x64.*zip",
             },
-        "ffmpeg_player": {
-            "Openlive_x86": "Agora_Openlive_for_Windows_x86.*zip</A>",
-            "Openlive_x64": "Agora_Openlive_for_Windows_x64.*zip</A>",
-            "Wayang_x64": "Agora_Wayang_for_Windows_x64.*zip</A>",
-            "Wayang_x86": "Agora_Wayang_for_Windows_x86.*zip</A>",
+            "ffmpeg_player": {
+                "Openlive_x86": ".*Openlive.*x86.*zip",
+                "Openlive_x64": ".*Openlive.*x64.*zip",
+                "Wayang_x64": ".*Wayang.*x64.*zip",
+                "Wayang_x86": ".*Wayang.*x86.*zip"
+            }
+        }
+    },
+    "2.7.2": {
+        "ios": {
+            "audio_only": {
+                "Premium": ".*premium.*ipa",
+                "Wayang": ".*Wayang.*ipa"
+            },
+            "default": {
+                "Premium": ".*premium.*ipa",
+                "Wayang": ".*Wayang.*ipa"
             }
         },
+        "android": {
+            "audio_only": {
+                "Premium": ".*premium.*apk",
+                "Wayang": ".*Wayang.*apk"
+            },
+            "default": {
+                "Premium": ".*premium.*apk",
+                "Wayang": ".*Wayang.*apk"
+            }
+        },
+        "windows": {
+            "audio_only": {
+                "Wayang_x64": ".*Wayang.*x64.*zip",
+                "Wayang_x86": ".*Wayang.*x86.*zip"
+            },
+            "default": {
+                "Wayang_x64": ".*Wayang.*x64.*zip",
+                "Wayang_x86": ".*Wayang.*x86.*zip",
+                "Openlive_x86": ".*Openlive.*x86.*zip",
+                "Openlive_x64": ".*Openlive.*x64.*zip"
+            }
+        }
+    }
 }
 
-if __name__ == "__main__":
-    for platform in platforms.keys():
-        print(platform)
-        for branch in platforms[platform].keys():
-            print(branch)
-            for check_name in platforms[platform][branch].keys():
-                print(check_name)
-                check_string = platforms[platform][branch][check_name]
-                print(check_string)
 
