@@ -59,7 +59,7 @@ PLATFORMS = {
                 "Openlive_x86": ".*Openlive.*x86.*zip",
                 "Openlive_x64": ".*Openlive.*x64.*zip",
                 "Wayang_x64": ".*Wayang.*x64.*zip",
-                "Wayang_x86": ".*Wayang.*x86.*zip"
+                "Wayang_x86": ".*Wayangs.*x86.*zip"
             }
         }
     },
