@@ -66,6 +66,5 @@ class CheckSpider(scrapy.Spider):
                 data = json.dumps(data)
 
                 return scrapy.Request(url=webhook, method="post", headers=headers, body=data)
-                print("===========ADFDASFASF===========")
             else:
                 pass
