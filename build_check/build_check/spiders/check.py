@@ -65,6 +65,6 @@ class CheckSpider(scrapy.Spider):
                 }
                 data = json.dumps(data)
 
-                return scrapy.Request(url=webhook, method="post", headers=headers, body=data)
+                yield scrapy.Request(url=webhook, method="post", headers=headers, body=data)
             else:
                 pass
