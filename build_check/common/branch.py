@@ -22,7 +22,7 @@ class windows():
     Openlive_x64 = ".*Openlive.*x64.*zip"
 
 branchDict = {
-    "2.7.1.2": {
+    "3.4.200": {
         "ios": {
             "audio_only": {
                 "Premium": ios.Premium,
@@ -80,44 +80,6 @@ branchDict = {
                 "Openlive_x64": windows.Openlive_x64,
                 "Wayang_x64": windows.Wayang_x64,
                 "Wayang_x86": windows.Wayang_x86
-            }
-        }
-    },
-    "2.7.2": {
-        "ios": {
-            "audio_only": {
-                "Premium": ios.Premium,
-                "Wayang": ios.Wayang
-            },
-            "default": {
-                "Premium": ios.Premium,
-                "Wayang": ios.Wayang
-            },
-            "ffmpeg_player": {
-                "Premium": ios.Premium,
-                "Wayang": ios.Wayang
-            }
-        },
-        "android": {
-            "audio_only": {
-                "Premium": android.Premium,
-                "Wayang": android.Wayang
-            },
-            "default": {
-                "Premium": android.Premium,
-                "Wayang": android.Wayang
-            }
-        },
-        "windows": {
-            "audio_only": {
-                "Wayang_x64": windows.Wayang_x64,
-                "Wayang_x86": windows.Wayang_x86
-            },
-            "default": {
-                "Wayang_x64": windows.Wayang_x64,
-                "Wayang_x86": windows.Wayang_x86,
-                "Openlive_x86": windows.Openlive_x86,
-                "Openlive_x64": windows.Openlive_x64
             }
         }
     }
