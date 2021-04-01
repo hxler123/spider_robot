@@ -7,6 +7,12 @@ from scrapy.selector import Selector
 from common.branch import branchDict
 from  scrapy.crawler import Settings
 
+# 小Q
+webhook = 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=8c7fab31-95cd-450b-b624-15b73993a927'
+
+# 小后
+# webhook = 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=cba55469-7415-4280-926f-d38c2a8d7f23‘
+
 class CheckSpider(scrapy.Spider):
     name = "build_check"
 
@@ -50,7 +56,6 @@ class CheckSpider(scrapy.Spider):
             reString = re.compile(checkString[1], re.I)
             checkResult = re.findall(reString, response.text)
             if bool(checkResult) is False:
-                webhook = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=cba55469-7415-4280-926f-d38c2a8d7f23"
                 content = "Branch: {branch}\nPlatform: {currentPlatform}\nType: {currentPkgType}\nPkg: {checkName}\n未出包\nlink:\n{link}"
                 headers = {'Content-Type': 'application/json'}
                 content = content.format(
@@ -75,7 +80,6 @@ class CheckSpider(scrapy.Spider):
         currentPkgType = failure.value.response.meta.get("pkgType")
         currentPlatform = failure.value.response.meta.get("platform")
         checkStringList = checkStringDict.items()
-        webhook = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=cba55469-7415-4280-926f-d38c2a8d7f23"
         content = "Branch: {branch}\nPlatform: {currentPlatform}\nType: {currentPkgType}\n未出包\nlink:\n{link}"
         headers = {'Content-Type': 'application/json'}
         content = content.format(

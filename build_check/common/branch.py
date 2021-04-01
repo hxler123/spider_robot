@@ -55,7 +55,7 @@ branchDict = {
             "default": {
                 "Premium": mac.Premium,
                 "Wayang": mac.Wayang,
-                "Agoplay": mac.Agoplay
+                # "Agoplay": mac.Agoplay
             },
             "ffmpeg_player": {
                 "Premium": mac.Premium,
@@ -70,8 +70,8 @@ branchDict = {
             "default": {
                 "Wayang_x64": windows.Wayang_x64,
                 "Wayang_x86": windows.Wayang_x86,
-                "Agoplay_x64": windows.Agoplay_x64,
-                "Agoplay_x86": windows.Agoplay_x86,
+                # "Agoplay_x64": windows.Agoplay_x64,
+                # "Agoplay_x86": windows.Agoplay_x86,
                 "Openlive_x86": windows.Openlive_x86,
                 "Openlive_x64": windows.Openlive_x64,
             },
